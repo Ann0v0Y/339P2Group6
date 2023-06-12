@@ -1,0 +1,131 @@
+
+  body { background-color: rgb(237, 234, 227); }
+
+  /* NAVIGATION */
+  .nav-main-item {
+    font-family: "sf-bold", sans-serif;
+    font-size: 1rem;
+    display: inline-block;
+    color: rgb(122, 121, 100);
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+  }
+
+  .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus  {
+    color: rgb(165, 167, 143);
+  }
+
+  h1 {
+  	font-family: "castoro", serif;
+    text-transform: uppercase;
+  	margin-left: 5rem;
+  	font-size: 3.25rem;
+  }
+
+  h2 {
+    font-family: "castoro", serif;
+    text-transform: uppercase;
+    margin-left: 5rem;
+    font-size: 1.75rem;
+  }
+
+  .different {
+    font-family: "castoro", serif;
+    text-transform: uppercase;
+    margin-left: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .different2 {
+    font-family: "castoro", serif;
+    text-transform: uppercase;
+    margin-left: 0rem;
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-family: "sf", sans-serif;
+    margin-left: 5rem;
+    font-size: 1.75rem;
+    margin-bottom: -1rem;
+  }
+
+  h4 {
+    font-family: "sf", sans-serif;
+    margin-left: 5rem;
+    font-style: italic;
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-family: "sf", sans-serif;
+    margin-left: 5rem;
+    font-size: 1rem;
+    max-width: 30rem;
+  }
+
+  form {
+    font-family: "sf", sans-serif;
+    font-size: 1.25rem;
+    margin: 5rem;
+  }
+
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  input[type=date], input[type="submit"] {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input[type="submit"] {
+    float: right;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(165, 167, 143);
+    border-radius: 25px;
+    font-family: "sf", sans-serif;
+    font-size: 1rem;
+    color: white;
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(122, 121, 100);
+  }
+
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  a {
+      text-decoration: none;
+      color: rgb(102, 75, 62);
+  }
+
+  ol, ul {
+   font-family: "sf", sans-serif;
+   font-size: 1rem;
+   max-width: 100rem;
+ }
+
+ @media (max-width: 75em) {
+ 	h1, h2, h3, h4, p, form {
+ 		margin-left: 2rem;
+ 	}
+  p {
+    max-width: 15rem;
+}
+h1 {
+  font-size: 2.75rem;
+}
+ }
