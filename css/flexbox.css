@@ -119,6 +119,33 @@ float: right;
   display: flex;
 }
 
+/* PAYMENT SCREEN */
+.container9 {
+  background-color: rgb(122, 121, 100);
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.homebutton{
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: rgb(165, 167, 143);
+  border-radius: 25px;
+  font-family: "sf", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.homebutton:active, .homebutton:hover, .homebutton:focus {
+  background-color: rgb(122, 121, 100);
+  background-color: rgb(140, 142, 118);
+}
+
 @media (max-width: 75em) {
 .container3 {
 flex-direction: column;
