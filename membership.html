@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Membership</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
+      <a href="index.html"><img src="lotus.png" alt="Lotus Yoga Logo" width="50"></a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-main">
+        <a href="schedule.html" class="nav-main-item">schedule</a>
+        <a href="membership.html" class="nav-main-item">memberships</a>
+      <a href="styleguide.html" class="nav-main-item">style guide</a>
+    </nav>
+  </div>
+
+  <!-- MEMBERSHIP SECTION -->
+  <div class="container5">
+    <section id="contact">
+      <h3>Join Our Membership</h3>
+      <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea><br><br>
+
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+         <!-- subscription section -->
+        <label for="subscription">Choose a subscription:</label><br>
+        <input type="radio" id="subscription1" name="subscription" value="Monthly">
+        <label for="subscription1">Monthly</label><br>
+        <input type="radio" id="subscription2" name="subscription" value="Quarterly">
+        <label for="subscription2">Quarterly</label><br>
+        <input type="radio" id="subscription3" name="subscription" value="Annual">
+        <label for="subscription3">Annual</label><br><br>
+
+        <!-- buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+  </div>
+</body>
+</html>
+

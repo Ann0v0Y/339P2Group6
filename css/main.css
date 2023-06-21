@@ -118,6 +118,10 @@
    max-width: 100rem;
  }
 
+ .whitetext {
+  color: white;
+ }
+
  @media (max-width: 75em) {
  	h1, h2, h3, h4, p, form {
  		margin-left: 2rem;
