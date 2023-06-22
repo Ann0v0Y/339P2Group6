@@ -1,0 +1,23 @@
+/* BOXES */
+/* .container4 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  } */
+  
+  .class-list-cart{
+    padding: 1rem;
+    display: flex;
+    padding-top: 0;
+  }
+  
+  .class-item {
+    /* Shorthand for 3 properties: flex-grow, flex-shrink, and glex-basis */
+    /* flex-grow -> for all these box items, let them take up up X amount of space (ie 3:1, 2:1, 1:1) */
+    /* flex-shrink: if there is a need for space, how much should this element shrink */
+    /* flex-basis: auto goes to the size of the element outside of the flex */
+    flex: 1 1 15em;
+    background-color: rgb(196, 151, 128);
+    margin: 1rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+  }
