@@ -90,10 +90,10 @@
     transform: translateY(40px);
     transition: all 0.7s;
 
-    .old {
+    /* .old {
         text-decoration: line-through;
         color: lighten(rgb(77, 77, 77), 40%);
-    }
+    } */
 }
 
 
@@ -108,14 +108,15 @@
     i {
         font-size: 16px;
     }
+}
 
-    span {
-        margin-left: 10px;
-        color: white;
-    }
+.cart span {
+    margin-left: 10px;
+    color: white;
 }
 
 .cart span:hover{
+    color:white;
     text-decoration: underline;
 }
 
