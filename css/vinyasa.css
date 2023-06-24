@@ -5,7 +5,7 @@
 .class-intro-sec {
   display: flex;
   justify-content: space-evenly;
-  margin: 5rem;
+  margin: auto;
   flex: 1;
   /* max-width:600px; */
   /* border:1px solid blue; */
@@ -47,7 +47,7 @@
 }
 
 .main-cta{
-  width: 60%;
+  width: 70%;
 }
 
 
