@@ -122,6 +122,50 @@
   color: white;
  }
 
+
+ /* footer section  */
+
+ .footer{
+  border-top: 2px solid rgb(102, 75, 62);;
+ }
+
+ .footer-content{
+  margin:2rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+ }
+
+ .about div, .Lotus div, .contact div{
+    font-size: 1.3rem;
+ }
+
+ .about div:nth-last-of-type(3){
+  color: gray;
+  font-size: 1.1rem;
+ }
+
+ .Lotus div:nth-last-of-type(4){
+  color: gray;
+  font-size: 1.1rem;
+ }
+
+ .contact div:nth-last-of-type(2){
+  color: gray;
+  font-size: 1.1rem;
+ }
+
+ .footnote{
+  display: flex;
+  justify-content: center;
+  margin-right: 4rem;
+ }
+
+ /* end of footer section  */
+
+
+ 
+
  /* @media (max-width: 75em) {
  	h1, h2, h3, h4, p, form {
  		margin-left: 2rem;
