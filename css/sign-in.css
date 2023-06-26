@@ -1,0 +1,40 @@
+*{
+    border: 1px solid red;
+}
+
+.sign-in{
+    display: flex;
+    /* flex:3; */
+    gap:5rem;
+    margin: 2rem 4rem;
+    /* flex-grow: 4; */
+}
+
+.sign-in-img{
+    flex:1
+}
+
+.sign-in-info{
+    flex:1
+}
+
+.sign-in-info h2{
+    margin-left: 0;
+}
+
+.sign-in-info input{
+  width:70%;
+}
+
+/* .sign-in-info span{
+    justify-content: end;
+} */
+
+.main-cta{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+    width: 40%;
+    text-align: center;
+}
