@@ -1,0 +1,53 @@
+* {
+    border: 1px solid red;
+}
+
+.sign-up {
+    display: flex;
+    /* flex:3; */
+    gap: 5rem;
+    margin: 2rem 4rem;
+    /* flex-grow: 4; */
+}
+
+.sign-up-img {
+    flex: 1
+}
+
+.sign-up-info {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.sign-up-info h2 {
+    margin-left: 0;
+}
+
+.line1{
+    display: flex;
+}
+
+#fName,#lName {
+    width: 30%;
+}
+
+.line2{
+    display: flex;
+}
+
+#bd,#email {
+    width: 30%;
+}
+
+.sign-up-info input{
+  width:70%;
+}
+
+.main-cta {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+    width: 40%;
+    text-align: center;
+}
