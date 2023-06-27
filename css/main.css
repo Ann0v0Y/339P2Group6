@@ -19,7 +19,8 @@
   h1 {
   	font-family: "castoro", serif;
     text-transform: uppercase;
-  	margin-left: 5rem;
+    color: white;
+    text-align: center;
   	font-size: 3.25rem;
   }
 
@@ -164,7 +165,7 @@
  /* end of footer section  */
 
 
- 
+
 
  /* @media (max-width: 75em) {
  	h1, h2, h3, h4, p, form {

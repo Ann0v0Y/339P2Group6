@@ -10,36 +10,8 @@ float: right;
 margin-top: -2rem;
 }
 
-/* CONTENT BLOCK ONE */
-.container2 {
-  background-color: rgb(231, 208, 190);
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-  margin: 2rem;
-}
-
 .nav-main {
 float: right;
-}
-
-.main-cta {
-  font-family: "sf-bold", sans-serif;
-  font-size: 1.25rem;
-  margin: 1rem;
-  margin-left: 5rem;
-  border: 1px solid;
-  border-color: rgb(102, 75, 62);
-  display: inline-block;
-  color: rgb(102, 75, 62);
-  padding: 0.25rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.5s ease-out;
-}
-
-.main-cta:active, .main-cta:hover, .main-cta:focus {
-  color:  rgb(36, 31, 25);
-  border-color: rgb(36, 31, 25);
 }
 
 /* BOXES */
@@ -60,7 +32,7 @@ float: right;
   /* flex-shrink: if there is a need for space, how much should this element shrink */
   /* flex-basis: auto goes to the size of the element outside of the flex */
   flex: 1 1 15em;
-  background-color: rgb(196, 151, 128);
+  background-color: rgb(231, 208, 190);
   margin: 1rem;
   padding: 2.5rem;
   border-radius: 25px;
