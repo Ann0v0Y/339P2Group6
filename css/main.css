@@ -5,6 +5,7 @@
   .nav-main{
     /* border: 1px solid red; */
     margin-top: 2rem;
+    display: flex;
     /* border-bottom: 2px solid rgb(21, 21, 21); */
   }
 

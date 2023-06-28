@@ -2,6 +2,11 @@
   border: 1px solid red;
 } */
 
+
+.class-detail h1{
+  color: black;
+}
+
 .class-intro-sec {
   display: flex;
   justify-content: space-evenly;
@@ -41,6 +46,8 @@
 }
 
 .main-cta{
+  color: rgb(166, 137, 85);
+  border: 2px solid rgb(166, 137, 85);
   width: 70%;
   padding: 1rem;
   font-size: 1rem;
@@ -51,7 +58,10 @@
   margin-top: 2rem;
 }
 
-
+.main-cta:active, .main-cta:hover, .main-cta:focus{
+  background-color: rgb(220, 197, 153);
+  color: white;
+}
 
 @media screen and (max-width: 1000px) {
   .class-intro-sec {
