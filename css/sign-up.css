@@ -1,13 +1,7 @@
-* {
-    border: 1px solid red;
-}
-
 .sign-up {
     display: flex;
-    /* flex:3; */
     gap: 5rem;
     margin: 2rem 4rem;
-    /* flex-grow: 4; */
 }
 
 .sign-up-img {
@@ -17,26 +11,33 @@
 .sign-up-info {
     flex: 1;
     flex-wrap: wrap;
+    background-color: rgb(100, 117, 94);
+    padding-left: 2rem;
+    border-radius: 2rem;
 }
 
 .sign-up-info h2 {
     margin-left: 0;
 }
 
+#fName,#lName,#bd,#email{
+    width: 60%;
+}
+
 .line1{
     display: flex;
 }
 
-#fName,#lName {
-    width: 30%;
+.line1>div{
+    flex:1;
 }
 
 .line2{
     display: flex;
 }
 
-#bd,#email {
-    width: 30%;
+.line2>div{
+    flex:1;
 }
 
 .sign-up-info input{
