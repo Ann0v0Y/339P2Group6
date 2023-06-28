@@ -72,6 +72,10 @@
     margin: 5rem;
   }
 
+.link {
+  margin-left: 5rem;
+}
+
   label {
     margin-bottom: 10px;
     display: block;
@@ -164,7 +168,40 @@
 
  /* end of footer section  */
 
+ /* Styleguide */
+ .colorboxlayout {
+   padding-left: 1rem;
+   display: flex;
+   flex: 1 1 15em;
+ }
 
+ .colorboxlightpink {
+   background-color: rgb(231, 208, 190);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+ .colorboxdarkpink {
+   background-color: rgb(196, 151, 128);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+ .colorboxlightgreen {
+   background-color: rgb(165, 167, 143);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
+
+ .colorboxdarkgreen {
+   background-color: rgb(122, 121, 100);
+   margin: 1rem;
+   padding: 2.5rem;
+   border-radius: 25px;
+ }
 
 
  /* @media (max-width: 75em) {
