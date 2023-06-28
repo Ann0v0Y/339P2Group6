@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lotus Yoga</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+  <link href="css/class-cart.css" rel="stylesheet">
+</head>
+
+  <div class="container">
+    <header>
+      <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
+      <a href="index.html"> <img src="lotus.png" alt="Lotus Yoga Logo" width="50"> </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-main">
+      <div class="dropdown">
+        <a href="schedule.html" class="nav-main-item">CLASSES  <span class="classes-icon"><img src="arrow.png" width="20"> </span></a>
+        <div class="dropdown-content">
+          <a href="vinyasa.html">Vinyasa flow</a>
+          <a href="freedom.html">Freedom flow</a>
+          <a href="power.html">Power yoga</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="styleguide.html" class="nav-main-item">MY ACCOUNT<span class="classes-icon"><img src="arrow.png" width="20"> </span></a>
+        <div class="dropdown-content">
+          <a href="SignIn.html">Sign in</a>
+          <a href="membership.html">Membership</a>
+          <a href="calsses.html">Class cart</a>
+        </div>
+      </div>
+
+      <a href="styleguide.html" class="nav-main-item">STYLE GUIDE</a>
+    </nav>
+
+    <body>
+        <div class="container">
+          <div class="cart-container">
+            <h1 class="cart-title">Your Cart</h1>
+            <table class="table">
+              <tr class="table-header">
+                <th class="table-item-special">Item</th>
+                <th class="table-item">Price</th>
+                <th class="table-item">Quantity</th>
+                <th class="table-item">Total</th>
+                <th class="table-item"></th>
+              </tr>
+              <tr class="table-row">
+                <td class="table-item-special">Single Session Drop-In
+                  <br>Vinyasa Flow with Tara on Monday June 2nd at 9:00am</td>
+                <td class="table-item">$32.5</td>
+                <td class="table-item">1</td>
+                <td class="table-item">$32.5</td>
+                <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-item-special">Single Session Drop-In
+                  <br>Vinyasa Flow with Tara on Tuesday June 3 at 9:00am</td>
+                <td class="table-item">$32.5</td>
+                <td class="table-item">1</td>
+                <td class="table-item">$32.5</td>
+                <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-item-special">Double Session Drop-In
+                  <br>Vinyasa Flow with Tara on Wednesday June 4 at 9:00am</td>
+                <td class="table-item">$32.5</td>
+                <td class="table-item">2</td>
+                <td class="table-item">$65</td>
+                <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+              </tr>
+             
+            </table>
+            <a class="checkout-btn" href="payment.html">continue to checkout</a>
+          </div>
+        </div>
+      
+        <script>
+          function removeItem(element) {
+            // remove the item from the cart
+            var row = element.parentNode;
+            while (row.tagName.toLowerCase() !== "tr") {
+              row = row.parentNode;
+            }
+            row.parentNode.removeChild(row);
+          }
+        </script>
+
+
+
+    <!--footer-->
+  <section class="footer">
+  <div class="footer-content">
+    <div class="about">
+      <div>About</div>
+      <a href="#">Terms & Conditions</a><br>
+      <a href="#">Privacy</a>
+    </div>
+
+    <div class="Lotus">
+      <div>Lotus</div>
+      <a href="#">My Account</a><br>
+      <a href="#">Memberships</a><br>
+      <a href="#">FAQ</a>
+    </div>
+
+    <div class="contact">
+      <div>Contact</div>
+      <a href="#">Contact Us</a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
