@@ -1,10 +1,10 @@
 /* background image */
 .backimg {
-  background: url("images/background.jpg");
-  background-color: rgb(231, 208, 190);
+  background: url("../images/background.jpg");
+  /* box-shadow: 0 0 4px 4px rgb(237, 234, 227) inset; */
   padding-top: 15rem;
   padding-bottom: 15rem;
-  margin: 2rem;
+  margin: 1rem 2rem;
 
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+}
 
 /* overall cart */
 .class-list-cart {
@@ -74,6 +74,7 @@
 .class-item>li {
     padding-top: 2rem;
     /* padding-bottom: 2rem; */
+    list-style: none;
 }
 
 

@@ -2,6 +2,22 @@
   body { background-color: rgb(237, 234, 227); }
 
   /* NAVIGATION */
+  .nav-main{
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    /* border-bottom: 2px solid rgb(21, 21, 21); */
+  }
+
+  .logo{
+    margin-left: 3rem;
+  }
+
+  .navigation{
+    padding-bottom: 1.3rem;
+    border-bottom: 1px rgb(122, 121, 100);
+    box-shadow: 0 8px 6px -6px rgb(122, 121, 100);
+  }
+
   .nav-main-item {
     font-family: "sf-bold", sans-serif;
     font-size: 1rem;
