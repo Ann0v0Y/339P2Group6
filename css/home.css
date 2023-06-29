@@ -34,6 +34,10 @@
   color: rgb(36, 31, 25);
 }
 
+.overview h2{
+    font-size: 1.5rem;
+}
+
 /* each item  */
 .class-item {
     /* Shorthand for 3 properties: flex-grow, flex-shrink, and glex-basis */
