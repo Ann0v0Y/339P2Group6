@@ -16,9 +16,14 @@
     color: rgb(165, 167, 143);
   }
 
-  h1 {
+ h1 {
   	font-family: "castoro", serif;
     text-transform: uppercase;
+    text-align: center;
+  	font-size: 3.25rem;
+  }
+   h1.title{
+  	font-family: "castoro", serif;
     color: white;
     text-align: center;
   	font-size: 3.25rem;
