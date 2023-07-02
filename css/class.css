@@ -1,0 +1,46 @@
+.class-overview {
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.class-overview h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.class-overview p {
+    /* border: 1px solid red; */
+    max-width: 70%;
+    margin: auto;
+    font-size: 1.15rem;
+}
+
+.class-intro-sec {
+    margin-top: 8rem;
+}
+
+.class-intro {
+    margin-top: 6rem;
+}
+
+.class-intro p {
+    font-size: 1.1rem;
+}
+
+.class-intro h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.class-intro-sec-reverse {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 5rem;
+    /* gap:8rem; */
+}
+
+.class-intro-sec-reverse img{
+    margin-left: 8rem;
+}
