@@ -1,82 +1,91 @@
-  
-  /* background */
-  .scheduleContainer{
-    background-color: rgb(231, 208, 190);
-    padding-top: 5rem;
-    padding-bottom: 15rem;
-    margin: 2rem;
-  }
-  .background-box {
-    margin-top: 0;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 3rem;
-    padding-top: 0rem;
-    padding-right: 0rem;
-    width: calc(100%-100px); 
-    height: 220px; 
-    background-color: #E7D0BE; 
-    border-radius: 20px;
-    border: 2px solid black;
-
-  }
-   /* schedule table */
-  table {
-    font-family:serif;
-    font-size: 20px; 
-    border-spacing: 0 10px; 
-  }
-
-  td {
-    padding-right: 110px;
-  }
-
-  /* interactive elements */
-  a[class="button"] {
-    margin-left: 5rem;
-    margin-bottom: 10rem;
-    padding-top: 0rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 0;
-    font-size: 20px;
-    background-color:  #E7D0BE;
-    color: #000000;
-    border: 2px solid black;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-a.button:hover {
-  background-color: black;
-  color: #E7D0BE; 
+/* filter section  */
+.filter {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+  /* border-bottom: 3px solid rgb(147, 125, 114); */
 }
-  /* fonts */
-  h1[class="schedule"]{
-    font-size:3rem;
-    margin-top: 0;
-    margin-left: 5rem;
-    margin-bottom: 1rem;
- }
-  h2[class="TimeTable"]{
-     font-size: 1rem;
-     margin-top: 0;
-     margin-left: 0rem;
-     margin-bottom: 0;
-  }
-  h2[class="week"]{
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-left: 5rem;
-    margin-bottom: .5rem;
- }
- span.date {
-    font-family: 'sf';
-    font-size: 0.5rem;
-  }
-  h6[class="TimeTable"]{
-    font-size: 0.5rem;
-    margin-top: 0;
-    margin-left: 0rem;
-    margin-bottom: 0;
- }
+
+.filter-right {
+  display: flex;
+  /* margin-right: 0; */
+}
+
+.filter-right input {
+  width: 70%;
+}
+
+.dropdown {
+  width: 70%;
+}
+/* end of filter section  */
+
+
+/* overall schedule section  */
+.schedule{
+  /* border: 1px solid red; */
+  margin:2rem 5rem;
+}
+
+.schedule-daily-cart{
+  flex: 3;
+}
+
+.schedule-daily {
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 3px solid rgb(147, 125, 114);
+}
+
+.date {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* date  */
+.date :nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.date :nth-child(2) {
+  font-size: 3rem;
+}
+/* end of date  */
+
+
+/* schedule info section  */
+.schedule-each {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.schedule-each a{
+  width:30%;
+  flex:1;
+  text-align: center;
+  margin: auto;
+}
+
+.schedule-each-info{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.schedule-each-info span{
+  margin-top: 0.2rem;
+}
+
+.schedule-each-info span:nth-child(2){
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+
+
