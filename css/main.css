@@ -159,11 +159,11 @@
   justify-content: space-around;
  }
 
- .about div, .Lotus div, .contact div{
+ .styleguide div, .Lotus div, .about div{
     font-size: 1.3rem;
  }
 
- .about div:nth-last-of-type(3){
+ .styleguide div:nth-last-of-type(3){
   color: gray;
   font-size: 1.1rem;
  }
@@ -173,7 +173,7 @@
   font-size: 1.1rem;
  }
 
- .contact div:nth-last-of-type(2){
+ .about div:nth-last-of-type(2){
   color: gray;
   font-size: 1.1rem;
  }
