@@ -1,3 +1,25 @@
+/* background image */
+.backimg {
+  background-image: url("../images/our-classes.jpg");
+
+  /* background-size: 3.2em; */
+
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  padding-left:0;
+  padding-right:0;
+
+  /* width: 100vw; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .class-overview {
     /* border: 1px solid red; */
     margin-top: 5rem;

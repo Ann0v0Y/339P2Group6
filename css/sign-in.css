@@ -14,7 +14,7 @@
 
 .sign-in-info {
     flex: 1;
-    background-color: rgb(100, 117, 94);
+    background-color: rgb(165, 167, 143);
     padding-left: 2rem;
     border-radius: 2rem;
 }
@@ -43,4 +43,18 @@
     margin-top: 1rem;
     width: 40%;
     /* text-align: center; */
+}
+
+label {
+    font-family: "sf", sans-serif;
+    font-size: 1rem;
+}
+
+.find-password {
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+.find-password:active, .find-password:hover, .find-password:focus {
+  color: rgb(222, 221, 200);
 }
