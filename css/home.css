@@ -203,6 +203,23 @@
 
 
 /* responsiveness  */
+@media screen and (max-width:1000px) {
+    .box{
+        min-width: 40%;
+        order:-1;
+    }
+
+    .container3{
+        order:-1;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .container3 {
+        flex-direction: column;
+      }
+}
+
 @media screen and (max-width:600px) {
     .nav-main{
         visibility: hidden;
@@ -212,7 +229,8 @@
         visibility: visible;
     }
 
-    .backimg{
-        height:40vw;
-    }
+    /* .backimg{
+        width: 70%;
+        height:auto;
+    } */
 }
