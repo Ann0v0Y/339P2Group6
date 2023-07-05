@@ -68,24 +68,4 @@
     margin-left: 8rem;
 }
 
-.book-now {
-  font-family: "sf-bold", sans-serif;
-  text-align: center;
-  text-transform: lowercase;
-  font-size: 1.25rem;
-  margin: auto;
-  display: flex;
-  display: grid;
-  background-color: rgb(196, 151, 128);
-  color: white;
-  padding: 0.25rem 1rem;
-  border-radius: 24px;
-  text-decoration: none;
-  transition: background-color 0.5s ease-out;
-  width: 112px;
-}
 
-.book-now:active, .book-now:hover, .book-now:focus {
-  background-color: rgb(221, 176, 153);
-  color: white;
-}
