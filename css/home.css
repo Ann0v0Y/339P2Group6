@@ -200,3 +200,19 @@
 }
 /* end of hover effect */
 /* end of class list */
+
+
+/* responsiveness  */
+@media screen and (max-width:600px) {
+    .nav-main{
+        visibility: hidden;
+    }
+
+    .nav-main i{
+        visibility: visible;
+    }
+
+    .backimg{
+        height:40vw;
+    }
+}
