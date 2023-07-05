@@ -23,6 +23,7 @@
 /* background image */
 .backimg {
   background-image: url("../images/background.jpg");
+}
 
   /* BOXES */
   .container4 {
@@ -40,6 +41,7 @@
     display: flex;
     padding-top: 0;
   }
+  
 
   .box {
     /* Shorthand for 3 properties: flex-grow, flex-shrink, and glex-basis */
