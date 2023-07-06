@@ -74,7 +74,7 @@
 
     background-size: cover;
     cursor: pointer;
-    -webkit-box-shadow: 0 0 5px #000;
+    /* -webkit-box-shadow: 0 0 5px #000; */
 
     transition:box-shadow 1s;
 }
@@ -116,20 +116,20 @@
 
     transform: translateY(40px);
     transition: all 0.7s;
+}
 
-    hr {
-        display: block;
-        width: 0;
+.head hr {
+    display: block;
+    width: 0;
 
-        border: none;
-        border-bottom: solid 2px #FEF5DF;
+    border: none;
+    border-bottom: solid 2px #FEF5DF;
 
-        position: absolute;
-        bottom: 0;
-        left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
 
-        transition: all .5s;
-    }
+    transition: all .5s;
 }
 
 .price {
@@ -154,11 +154,11 @@
     font-family: 'Lato', sans-serif;
     transform: translateY(40px);
     transition: all 0.7s;
-
-    i {
-        font-size: 16px;
-    }
 }
+
+.cart i {
+      font-size: 16px;
+  }
 
 .cart span {
     margin-left: 10px;
