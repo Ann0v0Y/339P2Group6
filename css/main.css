@@ -33,6 +33,30 @@
     color: rgb(165, 167, 143);
   }
 
+  /* NAV IMAGE CHANGE */
+  .image-container {
+    display: block;
+  }
+
+  .original-image {
+    width:25px;
+    height: 25px;
+  }
+
+  .hover-image {
+    display: none;
+    width:25px;
+    height: 25px;
+  }
+
+  .image-container:hover .hover-image {
+    display: block;
+  }
+
+  .image-container:hover .original-image {
+    display: none;
+  }
+  
  h1 {
   	font-family: "playfair", serif;
     text-align: center;
