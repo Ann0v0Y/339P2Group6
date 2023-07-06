@@ -11,7 +11,7 @@
   <link href="css/dropdown.css" rel="stylesheet">
   <link href="css/class.css" rel="stylesheet">
   <link href="css/schedule.css" rel="stylesheet">
-  
+
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
         <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
       </header>
-      
+
       <!-- Navigation Bar -->
       <nav class="nav-main">
         <div>
@@ -32,29 +32,32 @@
           <a href="sign-in.html" class="nav-main-item">sign in</a>
         </div>
 
-        <a href="class-cart.html" class="nav-main-item-special"> <img src="images/cart-reg.png" class="cart-image" alt="YOUR CART" width="25"> </a>
-     
+        <a href="class-cart.html" class="nav-main-item-special"> <img src="images/cart-reg.png" class="cart-image"
+            alt="YOUR CART" width="25"> </a>
+
         <!-- <a href="styleguide.html" class="nav-main-item">style guide</a> -->
       </nav>
     </div>
     <h1>Book Now</h1>
     <div class="date-image-container">
-    <img src="images/June.png" alt="June" width="100" class="calendar-image"></div>
+      <img src="images/June.png" alt="June" width="100" class="calendar-image">
+    </div>
 
     <div class="date-input-container">
       <div class="date-input">
-    <input class="date-input" placeholder="Thursday, July 1 2023" ></div>
-   
-    <div class="dropdown-instructor">
-      <input type="text" placeholder="Find your preferred instructor" id="instructor-input">
-      
-      <div class="dropdown-instructor-content">
-        <a href="#">Tara</a>
-        <a href="#">Talese</a>
-        <a href="#">Tokey</a>
+        <input class="date-input" placeholder="Thursday, July 1 2023">
       </div>
-   </div>
-  
+
+      <div class="dropdown-instructor">
+        <input type="text" placeholder="Find your preferred instructor" id="instructor-input">
+
+        <div class="dropdown-instructor-content">
+          <a href="#">Tara</a>
+          <a href="#">Talese</a>
+          <a href="#">Tokey</a>
+        </div>
+      </div>
+
       <div class="dropdown-calssType">
         <input type="text" placeholder="Class Type">
         <div class="dropdown-calssType-content">
@@ -62,14 +65,14 @@
           <a href="#">Power Flow</a>
           <a href="#">Freedom Flow</a>
         </div>
-       </div>
-       
-  <div class="apply-button">
-        <a href="#">APPLY</a>
-  </div>
+      </div>
 
-  </div>
-   
+      <div class="apply-button">
+        <a href="#">APPLY</a>
+      </div>
+
+    </div>
+
 
     <div class="table-container hidden">
       <table class="calendar-table">
@@ -94,51 +97,51 @@
             <td>02</td>
             <td>03</td>
           </tr>
-        
-        <tr> 
-          <td>04</td> 
-          <td>05</td> 
-          <td>06</td> 
-          <td>07</td> 
-          <td>08</td>
-          <td>09</td>
-          <td>10</td> 
-        </tr>
-        <tr> 
-          <td>11</td> 
-          <td>12</td> 
-          <td>13</td> 
-          <td>14</td> 
-          <td>15</td>
-          <td>16</td>
-          <td>17</td> 
-        </tr>
-        <tr> 
-          <td>18</td> 
-          <td>19</td> 
-          <td>20</td> 
-          <td>21</td> 
-          <td>22</td>
-          <td>23</td>
-          <td>24</td> 
-        </tr>
-        <tr> 
-          <td>25</td> 
-          <td>26</td> 
-          <td>27</td> 
-          <td>28</td> 
-          <td>29</td>
-          <td>30</td>
-          <td>31</td> 
-        </tr>
+
+          <tr>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
         </tbody>
       </table>
-    
+
     </div>
 
 
 
-  
+
 
     <section class="schedule">
       <div class="schedule-daily">
@@ -154,8 +157,22 @@
               <span>Vinyasa Flow</span>
               <span>Tara</span>
             </div>
-            <a href="schedule.html" class="main-cta">Reserve Now</a>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
           </div>
+
+
+          <div class="schedule-each">
+            <div class="schedule-each-info">
+              <span>9:00AM</span>
+                <span>Vinyasa Flow</span>
+                <span>Tara</span>
+            </div>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
+
+
+          </div>
+
+
 
           <div class="schedule-each">
             <div class="schedule-each-info">
@@ -163,21 +180,12 @@
               <span>Vinyasa Flow</span>
               <span>Tara</span>
             </div>
-            <a href="schedule.html" class="main-cta">Reserve Now</a>
-          </div>
-
-          <div class="schedule-each">
-            <div class="schedule-each-info">
-              <span>9:00AM</span>
-              <span>Vinyasa Flow</span>
-              <span>Tara</span>
-            </div>
-            <a href="schedule.html" class="main-cta">Reserve Now</a>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
           </div>
         </div>
-       </div>
+      </div>
 
-       <div class="schedule-daily">
+      <div class="schedule-daily">
         <div class="date">
           <span>July</span>
           <span>3rd</span>
@@ -190,7 +198,7 @@
               <span>Vinyasa Flow</span>
               <span>Tara</span>
             </div>
-            <a href="schedule.html" class="main-cta">Reserve Now</a>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
           </div>
 
           <div class="schedule-each">
@@ -199,7 +207,7 @@
               <span>Vinyasa Flow</span>
               <span>Tara</span>
             </div>
-            <a href="schedule.html" class="main-cta">Reserve Now</a>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
           </div>
 
           <div class="schedule-each">
@@ -208,14 +216,34 @@
               <span>Vinyasa Flow</span>
               <span>Tara</span>
             </div>
-            <a href="schedule.html" class="main-cta">Reserve Now</a>
+            <a class="main-cta" onclick="showPopup()">Reserve Now</a>
           </div>
         </div>
 
-
-
       </div>
+
+      <!-- create a pop up window  -->
+      <div id="popupWindow" class="popup">
+        <p>Booked successfully!</p>
+        <p><a href="class-cart.html">Click to view cart</a></p>
+      </div>
+  
+      <script>
+        function showPopup() {
+          // Display the pop-up window
+          document.getElementById("popupWindow").style.display = "block";
+  
+          // Set timeout to hide the pop-up after 3 seconds
+          setTimeout(function () {
+            document.getElementById("popupWindow").style.display = "none";
+          }, 2000);
+        }
+      </script>
+      <!-- end of pop up window  -->
+
     </section>
+
+
 
 
     <!-- FOOTER SECTION  -->
@@ -259,71 +287,23 @@
       });
     </script>
 
-<script>
-  var instructorInput = document.getElementById("instructor-input");
-  var dropdownContent = document.querySelector(".dropdown-instructor-content");
+    <script>
+      var instructorInput = document.getElementById("instructor-input");
+      var dropdownContent = document.querySelector(".dropdown-instructor-content");
 
-  instructorInput.addEventListener("input", function() {
-    var value = instructorInput.value;
+      instructorInput.addEventListener("input", function () {
+        var value = instructorInput.value;
 
-    if (value.includes("T")) {
-      dropdownContent.style.display = "block";
-    } 
-    else if(value.includes("t")){
-      dropdownContent.style.display = "block";
-    }
-    else {
-      dropdownContent.style.display = "none";
-    }
-    
-  });
-</script>
-
-<script>
-  var calendarImage = document.querySelector('.calendar-image');
-  var tableContainer = document.querySelector('.table-container');
-
-  calendarImage.addEventListener('click', function () {
-    this.classList.toggle('clicked');
-    tableContainer.classList.toggle('hidden');
-  });
-</script>
-
-<script>
-  // 获取所有的下拉菜单选项链接
-  const dropdownOptions = document.querySelectorAll('.dropdown-instructor-content a, .dropdown-calssType-content a');
-
-  // 为每个选项链接添加点击事件监听器
-  dropdownOptions.forEach(option => {
-    option.addEventListener('click', function () {
-      // 将选项文本设置为输入框的值
-      const inputField = this.closest('.dropdown-instructor, .dropdown-calssType').querySelector('input');
-      inputField.value = this.textContent;
-
-      // 隐藏下拉菜单
-      const dropdownContent = this.closest('.dropdown-instructor-content, .dropdown-calssType-content');
-      dropdownContent.style.display = 'none';
-    });
-  });
-</script>
-<script>
-  // 获取所有的日历表格单元格
-  const calendarCells = document.querySelectorAll('.calendar-table td');
-
-  // 为每个单元格添加点击事件监听器
-  calendarCells.forEach(cell => {
-    cell.addEventListener('click', function () {
-      // 移除所有单元格的选中样式
-      calendarCells.forEach(cell => {
-        cell.classList.remove('selected');
+        if (value.includes("T")) {
+          dropdownContent.style.display = "block";
+        }
+        else if (value.includes("t")) {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "none";
+        }
       });
-
-      // 添加选中样式到当前点击的单元格
-      this.classList.add('selected');
-    });
-  });
-</script>
-
+    </script>
 
 </body>
 
