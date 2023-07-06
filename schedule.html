@@ -11,6 +11,7 @@
   <link href="css/dropdown.css" rel="stylesheet">
   <link href="css/class.css" rel="stylesheet">
   <link href="css/schedule.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -20,38 +21,124 @@
         <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
         <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
       </header>
-
+      
       <!-- Navigation Bar -->
       <nav class="nav-main">
-        <div class="dropdown">
-          <a href="class.html" class="nav-main-item">CLASSES</span></a>
+        <div>
+          <a href="class.html" class="nav-main-item">classes</a>
         </div>
 
-        <div class="dropdown">
-          <a href="styleguide.html" class="nav-main-item">MY ACCOUNT</a>
+        <div>
+          <a href="sign-in.html" class="nav-main-item">sign in</a>
         </div>
 
-        <a href="styleguide.html" class="nav-main-item">STYLE GUIDE</a>
+        <a href="class-cart.html" class="nav-main-item-special"> <img src="images/cart-reg.png" class="cart-image" alt="YOUR CART" width="25"> </a>
+     
+        <!-- <a href="styleguide.html" class="nav-main-item">style guide</a> -->
       </nav>
     </div>
-
-
     <h1>Book Now</h1>
-    <div class="filter">
-      <div><input type="date"></div>
-      <div class="filter-right">
-        <input type="text" placeholder="Find your prefer instructor">
-        <div class="dropdown">
-          <a href="class.html" class="nav-main-item"><span class="classes-icon">CLASSES TYPE<img src="arrow.png"
-                width="20"> </span> </a>
-          <div class="dropdown-content">
-            <a href="vinyasa-page.html">Vinyasa flow</a>
-            <a href="freedom-page.html">Freedom flow</a>
-            <a href="power-page.html">Power yoga</a>
-          </div>
-        </div>
+    <div class="date-image-container">
+    <img src="images/June.png" alt="June" width="100" class="calendar-image"></div>
+
+    <div class="date-input-container">
+      <div class="date-input">
+    <input class="date-input" placeholder="Thursday, July 1 2023" ></div>
+   
+    <div class="dropdown-instructor">
+      <input type="text" placeholder="Find your preferred instructor" id="instructor-input">
+      
+      <div class="dropdown-instructor-content">
+        <a href="#">Tara</a>
+        <a href="#">Talese</a>
+        <a href="#">Tokey</a>
       </div>
+   </div>
+  
+      <div class="dropdown-calssType">
+        <input type="text" placeholder="Class Type">
+        <div class="dropdown-calssType-content">
+          <a href="#">Vinyasa Flow</a>
+          <a href="#">Power Flow</a>
+          <a href="#">Freedom Flow</a>
+        </div>
+       </div>
+       
+  <div class="apply-button">
+        <a href="#">APPLY</a>
+  </div>
+
+  </div>
+   
+
+    <div class="table-container hidden">
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>SU</th>
+            <th>M</th>
+            <th>TU</th>
+            <th>W</th>
+            <th>TH</th>
+            <th>F</th>
+            <th>SA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+          </tr>
+        
+        <tr> 
+          <td>04</td> 
+          <td>05</td> 
+          <td>06</td> 
+          <td>07</td> 
+          <td>08</td>
+          <td>09</td>
+          <td>10</td> 
+        </tr>
+        <tr> 
+          <td>11</td> 
+          <td>12</td> 
+          <td>13</td> 
+          <td>14</td> 
+          <td>15</td>
+          <td>16</td>
+          <td>17</td> 
+        </tr>
+        <tr> 
+          <td>18</td> 
+          <td>19</td> 
+          <td>20</td> 
+          <td>21</td> 
+          <td>22</td>
+          <td>23</td>
+          <td>24</td> 
+        </tr>
+        <tr> 
+          <td>25</td> 
+          <td>26</td> 
+          <td>27</td> 
+          <td>28</td> 
+          <td>29</td>
+          <td>30</td>
+          <td>31</td> 
+        </tr>
+        </tbody>
+      </table>
+    
     </div>
+
+
+
+  
 
     <section class="schedule">
       <div class="schedule-daily">
@@ -162,6 +249,82 @@
     </section>
 
     <!-- END OF FOOTER  -->
+    <script>
+      var cartImage = document.querySelector('.cart-image');
+      cartImage.addEventListener('mouseover', function () {
+        this.src = 'images/cart-hover.png';
+      });
+      cartImage.addEventListener('mouseout', function () {
+        this.src = 'images/cart-reg.png';
+      });
+    </script>
+
+<script>
+  var instructorInput = document.getElementById("instructor-input");
+  var dropdownContent = document.querySelector(".dropdown-instructor-content");
+
+  instructorInput.addEventListener("input", function() {
+    var value = instructorInput.value;
+
+    if (value.includes("T")) {
+      dropdownContent.style.display = "block";
+    } 
+    else if(value.includes("t")){
+      dropdownContent.style.display = "block";
+    }
+    else {
+      dropdownContent.style.display = "none";
+    }
+    
+  });
+</script>
+
+<script>
+  var calendarImage = document.querySelector('.calendar-image');
+  var tableContainer = document.querySelector('.table-container');
+
+  calendarImage.addEventListener('click', function () {
+    this.classList.toggle('clicked');
+    tableContainer.classList.toggle('hidden');
+  });
+</script>
+
+<script>
+  // 获取所有的下拉菜单选项链接
+  const dropdownOptions = document.querySelectorAll('.dropdown-instructor-content a, .dropdown-calssType-content a');
+
+  // 为每个选项链接添加点击事件监听器
+  dropdownOptions.forEach(option => {
+    option.addEventListener('click', function () {
+      // 将选项文本设置为输入框的值
+      const inputField = this.closest('.dropdown-instructor, .dropdown-calssType').querySelector('input');
+      inputField.value = this.textContent;
+
+      // 隐藏下拉菜单
+      const dropdownContent = this.closest('.dropdown-instructor-content, .dropdown-calssType-content');
+      dropdownContent.style.display = 'none';
+    });
+  });
+</script>
+<script>
+  // 获取所有的日历表格单元格
+  const calendarCells = document.querySelectorAll('.calendar-table td');
+
+  // 为每个单元格添加点击事件监听器
+  calendarCells.forEach(cell => {
+    cell.addEventListener('click', function () {
+      // 移除所有单元格的选中样式
+      calendarCells.forEach(cell => {
+        cell.classList.remove('selected');
+      });
+
+      // 添加选中样式到当前点击的单元格
+      this.classList.add('selected');
+    });
+  });
+</script>
+
+
 </body>
 
 </html>

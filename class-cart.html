@@ -12,6 +12,7 @@
   <link href="css/class-cart.css" rel="stylesheet">
 </head>
 
+<body>
   <div class="container">
     <header>
       <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
@@ -42,83 +43,103 @@
     </nav>
 
     <body>
-        <div class="container">
-          <div class="cart-container">
-            <h1 class="cart-title">Your Cart</h1>
-            <table class="table">
-              <tr class="table-header">
-                <th class="table-item-special">Item</th>
-                <th class="table-item">Price</th>
-                <th class="table-item">Quantity</th>
-                <th class="table-item">Total</th>
-                <th class="table-item"></th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-item-special">Single Session Drop-In
-                  <br>Vinyasa Flow with Tara on Monday June 2nd at 9:00am</td>
-                <td class="table-item">$32.5</td>
-                <td class="table-item">1</td>
-                <td class="table-item">$32.5</td>
-                <td class="table-item remove-item" onclick="removeItem(this)">x</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-item-special">Single Session Drop-In
-                  <br>Vinyasa Flow with Tara on Tuesday June 3 at 9:00am</td>
-                <td class="table-item">$32.5</td>
-                <td class="table-item">1</td>
-                <td class="table-item">$32.5</td>
-                <td class="table-item remove-item" onclick="removeItem(this)">x</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-item-special">Double Session Drop-In
-                  <br>Vinyasa Flow with Tara on Wednesday June 4 at 9:00am</td>
-                <td class="table-item">$32.5</td>
-                <td class="table-item">2</td>
-                <td class="table-item">$65</td>
-                <td class="table-item remove-item" onclick="removeItem(this)">x</td>
-              </tr>
-             
-            </table>
-            <a class="checkout-btn" href="payment.html">continue to checkout</a>
-          </div>
+      <div class="container">
+        <div class="cart-container">
+          <h1 class="cart-title">Your Cart</h1>
+          <table class="table">
+            <tr class="table-header">
+              <th class="table-item-special">Item</th>
+              <th class="table-item">Price</th>
+              <th class="table-item">Quantity</th>
+              <th class="table-item">Total</th>
+              <th class="table-item"></th>
+            </tr>
+            <tr class="table-row">
+              <td class="table-item-special">Single Session Drop-In</td>
+              <td class="table-item">$32.5</td>
+              <td class="table-item">1</td>
+              <td class="table-item">$32.5</td>
+              <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+             <tr class="table-row">
+              <td class="table-item-special">Monthly Pass(June)</td>
+              <td class="table-item">$45</td>
+              <td class="table-item">1</td>
+              <td class="table-item">$45</td>
+              <td class="table-item remove-item" onclick="removeItem(this)">x</td>
+            </tr>
+            <tr>
+              <td><br><br><br><br><br></td>
+            </tr>
+
         </div>
-      
-        <script>
-          function removeItem(element) {
-            // remove the item from the cart
-            var row = element.parentNode;
-            while (row.tagName.toLowerCase() !== "tr") {
-              row = row.parentNode;
-            }
-            row.parentNode.removeChild(row);
-          }
-        </script>
+        
+        <div class="receipt-container">
+        </table>
+        <table class="receipt-table">
+          <tr>
+            <td colspan="2" style="text-align: center;">Order Summary</td>
+          </tr>
+          <tr>
+            <td>1 x Drop-In</td>
+            <td>$32.5</td>
+          </tr>
+          <tr>
+            <td>1 x Monthly Pass (June)</td>
+            <td>$45</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$77.5</td>
+          </tr>
+        </table>
+        </div>
 
-
-
-    <!--footer-->
-  <section class="footer">
-  <div class="footer-content">
-    <div class="about">
-      <div>About</div>
-      <a href="#">Terms & Conditions</a><br>
-      <a href="#">Privacy</a>
+      </div>
+      <div class="checkout-btn-container">
+       <a class="checkout-btn" href="payment.html">continue to checkout</a></div>
+    
+       <!--footer-->
+       <section class="footer">
+        <div class="footer-content">
+          <div class="about">
+            <div>About</div>
+            <a href="#">Terms & Conditions</a><br>
+            <a href="#">Privacy</a>
+          </div>
+  
+          <div class="Lotus">
+            <div>Lotus</div>
+            <a href="#">My Account</a><br>
+            <a href="#">Memberships</a><br>
+            <a href="#">FAQ</a>
+          </div>
+  
+          <div class="contact">
+            <div>Contact</div>
+            <a href="#">Contact Us</a>
+          </div>
+  
+        </div>
+      </section>
+  
     </div>
+    <script>
+      function removeItem(element) {
+        // remove the item from the cart
+        var row = element.parentNode;
+        while (row.tagName.toLowerCase() !== "tr") {
+          row = row.parentNode;
+        }
+        row.parentNode.removeChild(row);
+      }
+    </script>
+ 
 
-    <div class="Lotus">
-      <div>Lotus</div>
-      <a href="#">My Account</a><br>
-      <a href="#">Memberships</a><br>
-      <a href="#">FAQ</a>
-    </div>
+    </body>
 
-    <div class="contact">
-      <div>Contact</div>
-      <a href="#">Contact Us</a>
-    </div>
+    
+    
 
-  </div>
 
-</body>
-
+    
 </html>

@@ -1,25 +1,138 @@
-/* filter section  */
-.filter {
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 5rem;
-  /* border-bottom: 3px solid rgb(147, 125, 114); */
+
+/* calendar section  */
+.table-container {
+  margin-top: 2rem;
+  margin-left: 4rem;
 }
 
-.filter-right {
-  display: flex;
-  /* margin-right: 0; */
+.calendar-table {
+  width: 30%;
+  border-collapse: collapse;
 }
 
-.filter-right input {
-  width: 70%;
+.calendar-table th,
+.calendar-table td {
+  padding: 0.5rem;
+  text-align: center;
+ 
+}
+.calendar-table td:hover {
+  background-color: #C3A583;
+  color: white;
+}
+.selected {
+  background-color: #C3A583;
+  color: white;
+}
+.calendar-table th {
+  font-weight: bold;
+}
+.table-container.hidden {
+  display: none;
+  
+}
+.calendar-image {
+  cursor: pointer;
+  margin-left: 70px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+  
+}
+.calendar-image.clicked + .table-container {
+  display: block;
+}
+.date-input-container {
+ margin-left: 180px;
+ margin-top: -38px;
 }
 
-.dropdown {
-  width: 70%;
+.date-input{
+  width: 140px;
+  height: 25px;
 }
-/* end of filter section  */
+/* instructor input section  */
+.dropdown-instructor {
+  position: relative;
+  width: 15%;
+  margin-left: 700px;
+  margin-top: -30px;
+}
+
+.dropdown-instructor input {
+  width: 100%;
+}
+
+.dropdown-instructor-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.dropdown-instructor-content a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* calss type input section  */
+.dropdown-calssType {
+  position: relative;
+  width: 15%;
+  margin-left: 940px;
+  margin-top: -62px;
+}
+
+.dropdown-calssType input {
+  width: 100%;
+}
+
+.dropdown-calssType-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+
+.dropdown-calssType-content a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-calssType:hover .dropdown-calssType-content {
+  display: block;
+}
+
+.dropdown-instructor-content a:hover,
+.dropdown-calssType-content a:hover {
+  background-color: #C3A583;
+}
+
+.apply-button {
+  margin-top: 0px;
+  margin-left: 68rem;
+}
+
+.apply-button a {
+  display: inline-block;
+  background-color: transparent;
+  color: black;
+  text-decoration: underline;
+}
+
+
 
 
 /* overall schedule section  */
@@ -85,6 +198,7 @@
   font-weight: bold;
   font-size: 1.25rem;
 }
+
 
 
 
