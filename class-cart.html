@@ -9,43 +9,39 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
-  <link href="css/home.css" rel="stylesheet">
-  <link href="css/dropdown.css" rel="stylesheet">
   <link href="css/class-cart.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="navigation">
-    <header>
-      <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
-      <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav class="nav-main">
-        <div class="dropdown">
-        <a href="schedule.html" class="nav-main-item">BOOK NOW</a>
-        </div>
-
-         <div class="dropdown">
-           <a href="class.html" class="nav-main-item">CLASSES</a>
+      <header>
+        <!-- Logo found here https://www.istockphoto.com/vector/lotus-icon-vector-logo-template-in-trendy-flat-design-gm1304408169-395575914 -->
+        <a href="index.html"> <img src="lotus.png" class="logo" alt="Lotus Yoga Logo" width="50"> </a>
+      </header>
+  
+      <!-- Navigation Bar -->
+      <nav class="nav-main">
+          <div class="dropdown">
+          <a href="schedule.html" class="nav-main-item">BOOK NOW</a>
+          </div>
+  
+           <div class="dropdown">
+             <a href="class.html" class="nav-main-item">CLASSES</a>
+           </div> 
+  
+           <div class="dropdown">
+             <a href="sign-in.html" class="nav-main-item">SIGN IN</a>
+           </div>
+  
+           <div class="image-container">
+              <a href="class-cart.html"><img src="images/cart-reg.png" alt="Original Image" class="original-image"></a>
+              <a href="class-cart.html"><img src="images/cart-hover.png" alt="Hover Image" class="hover-image"></a>
+           </div>
+         </nav>
          </div>
-
-         <div class="dropdown">
-           <a href="sign-in.html" class="nav-main-item">SIGN IN</a>
-         </div>
-
-         <div class="image-container">
-            <a href="class-cart.html"><img src="images/cart-reg.png" alt="Original Image" class="original-image"></a>
-            <a href="class-cart.html"><img src="images/cart-hover.png" alt="Hover Image" class="hover-image"></a>
-         </div>
-
-      <i class="fa-solid fa-bars"></i>
-      </nav>
-  </div>
-
-      <div class="container">
+        <i class="fa-solid fa-bars"></i>
+      <div class="cart-container">
         <div class="cart-container">
           <h1 class="cart-title">Your Cart</h1>
           <table class="table">
@@ -91,12 +87,15 @@
             <td>Total</td>
             <td>$77.5</td>
           </tr>
+          <tr class="checkout-btn-container">
+            <td><a class="checkout-btn" href="payment.html">continue to checkout</a></td>
+          </tr>
         </table>
         </div>
-
+        <!-- <div class="checkout-btn-container">
+          <a class="checkout-btn" href="payment.html">continue to checkout</a></div> -->
       </div>
-      <div class="checkout-btn-container">
-       <a class="checkout-btn" href="payment.html">continue to checkout</a></div>
+     
 
        <!--footer-->
        <section class="footer">
@@ -123,7 +122,7 @@
          </div>
       </section>
 
-    </div>
+   
 
     <script>
       function removeItem(element) {
@@ -136,7 +135,7 @@
       }
     </script>
 
-
+</div>
     </body>
 
 
