@@ -57,7 +57,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-left: 3rem;
-} 
+}
 
 .class-image{
     width: 100%;
@@ -86,27 +86,52 @@
   .class-intro-sec-reverse h2{
     margin-left: 3rem;
   }
-  
+
   .class-info {
     flex: 1;
     padding: 20px;
   }
-  
+
 
 
 
   @media (max-width: 1000px) {
+    .class-overview h2 {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    .class-overview p {
+      max-width: 90%;
+      margin-top: 1rem;
+    }
+    .class-intro {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .class-intro h2 {
+      margin-left: 0;
+    }
+    .class-intro p {
+      margin-left: 0;
+      width: 100%;
+    }
+
     .class-intro-sec-reverse {
       flex-direction: column;
     }
-    
+
     .class-info {
       order: 2;
     }
-    
+
     .class-image {
       order: 1;
+      align-self: center;
+    }
+
+    .class-intro-sec-reverse img {
+      margin-left: 0;
     }
   }
-  
-  
