@@ -8,8 +8,8 @@
 .table {
   border-collapse: collapse;
   width: 60rem;
-  margin: auto; 
-  background-color: #FCFAF6; 
+  margin: auto;
+  background-color: #FCFAF6;
   border: 2px solid #E3D1C0;
   margin-bottom: 30px;
   margin-left: 30px;
@@ -18,7 +18,7 @@
 
 .table-header {
   font-family: "sf-bold", sans-serif;
-  background-color: #E3D1C0; 
+  background-color: #E3D1C0;
   font-size: 20px;
 }
 
@@ -37,8 +37,8 @@
 .checkout-btn {
   font-family: "sf";
   font-size: 17px;
-  border-radius: 20px; 
-  background-color: #FCFAF6; 
+  border-radius: 20px;
+  background-color: #FCFAF6;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -49,7 +49,7 @@
 }
 .checkout-btn:hover{
   color: #FCFAF6;
-  background-color: #775C4C; 
+  background-color: #775C4C;
   border-color: #775C4C;
 }
 
@@ -92,7 +92,27 @@ text-align: end;
   margin-top: 10rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1500px) {
+  .cart-container {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .cart-title { margin-left: 0;}
+
+  .receipt-table {
+    align-self: center;
+    margin-left: 0;
+    margin-top: 0;
+    width: 90%;
+  }
+
+  .checkout-btn-container {
+    text-align: center;
+  }
+
+
+@media (max-width: 1000px) {
 
   .table {
     width: 90%;
@@ -100,24 +120,26 @@ text-align: end;
   }
 
   .cart-container {
-    width: 90%;
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
   }
+  .cart-title { margin-left: 0;}
 
   .receipt-table {
+    align-self: center;
     margin-left: 0;
     margin-top: 0;
     width: 90%;
   }
-  
+
   .checkout-btn-container {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
-  
+
   .footer {
     margin-top: 5rem;
   }
 
-  
+
 }
