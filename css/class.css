@@ -1,6 +1,6 @@
 /* background image */
 .backimgclass {
-  background-image: url("./images/our-classes.jpg");
+  background-image: url("../images/our-classes.jpg");
 
   /* background-size: 3.2em; */
 
@@ -67,5 +67,3 @@
 .class-intro-sec-reverse img{
     margin-left: 8rem;
 }
-
-
