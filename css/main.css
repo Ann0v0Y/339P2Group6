@@ -36,6 +36,7 @@
   /* NAV IMAGE CHANGE */
   .image-container {
     display: block;
+    margin-left: 1rem;
   }
 
   .original-image {
@@ -289,3 +290,10 @@ h1 {
   font-size: 2.75rem;
 }
  } */
+
+ @media (max-width: 600px) {
+  .nav-main-item {
+    font-size: 0.6rem;
+    margin: 0.5rem 0;
+  }
+ }
