@@ -4,7 +4,7 @@
     margin: 2rem 4rem;
 }
 
-.sign-up input{
+.sign-up input {
     width: 70%;
     border: 0;
     background:
@@ -30,13 +30,14 @@
 
 
 .sign-up-img {
-    background-image: url('../images/signin.png');
-    /* border: 1px solid red; */
-    /* margin: 0; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* width: 500px;
-    height: 550px; */
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.sign-up-img img {
+    max-width: 100%;
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0 0 10px 10px white inset;
 }
@@ -44,42 +45,45 @@
 .sign-up-info {
     flex: 1;
     flex-wrap: wrap;
-    /* background-color: rgb(196, 151, 128); */
-    background-color: #A5A78F;;
+    background-color: #A5A78F;
     padding-left: 2rem;
     border-radius: 2rem;
+    padding-bottom: 2rem;
 }
 
 .sign-up-info h2 {
     margin-left: 0;
 }
 
-#fName,#lName,#bd,#email{
+#fName,
+#lName,
+#bd,
+#email {
     width: 60%;
 }
 
-.line1{
+.line1 {
     display: flex;
 }
 
-.line1>div{
-    flex:1;
+.line1>div {
+    flex: 1;
 }
 
-.line2{
+.line2 {
     display: flex;
 }
 
-.line2>div{
-    flex:1;
+.line2>div {
+    flex: 1;
 }
 
-.sign-up-info input{
-  width:70%;
+.sign-up-info input {
+    width: 70%;
 }
 
 
-.sign-up a{
+.sign-up a {
     font-family: "sf", sans-serif;
     display: flex;
     flex-direction: column;
@@ -96,4 +100,13 @@
     color: white;
     text-decoration: none;
     /* border: 1px solid #7A7964; */
+}
+
+
+/* responsiveness  */
+@media screen and (max-width:1000px) {
+    .sign-up-img {
+        visibility: hidden;
+        display: none;
+    }
 }
