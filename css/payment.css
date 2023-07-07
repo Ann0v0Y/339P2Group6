@@ -100,3 +100,20 @@
     color: rgb(98, 76, 64);
     border: 2px solid rgb(98,76,64);
 }
+
+@media screen and (max-width: 1000px) {
+    .paymentbox {
+      flex-direction: column;
+      padding: 2rem;
+     }
+    h2 { text-align: center;}
+    .payment-button {
+      flex-direction: column;
+    }
+    .left-button { order: 2; }
+    .right-button {
+      order: 1;
+      padding-bottom: 4rem;
+      gap: 0rem;
+    }
+}

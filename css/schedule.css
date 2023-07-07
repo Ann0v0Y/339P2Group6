@@ -14,7 +14,7 @@
 .calendar-table td {
   padding: 0.5rem;
   text-align: center;
- 
+
 }
 .calendar-table td:hover {
   background-color: #C3A583;
@@ -29,7 +29,7 @@
 }
 .table-container.hidden {
   display: none;
-  
+
 }
 .calendar-image {
   cursor: pointer;
@@ -37,7 +37,7 @@
   padding: 0;
   margin-bottom: 0;
   margin-top: 50px;
-  
+
 }
 .calendar-image.clicked + .table-container {
   display: block;
@@ -129,7 +129,7 @@
   /* border: 1px solid red; */
   margin-right: 5rem;
   text-align: end;
-  
+
 }
 
 .apply-button a {
@@ -181,6 +181,8 @@
 .schedule-each {
   display: flex;
   margin-top: 1.5rem;
+  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .schedule-each a{
@@ -206,6 +208,7 @@
   font-size: 1.25rem;
 }
 
+<<<<<<< HEAD
 /* pop up window  */
 .popup {
   width: 15rem;
@@ -234,3 +237,30 @@
   text-decoration: underline;
 }
 
+=======
+.main-cta{
+  font-family: "sf";
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #FCFAF6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #775C4C;
+  border: 2px solid #775C4C;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.main-cta:active, .main-cta:hover, .main-cta:focus{
+  color: #FCFAF6;
+  background-color: #775C4C;
+  border-color: #775C4C;
+}
+
+@media screen and (max-width:1000px) {
+    .schedule-daily{
+        flex-direction: column;
+    }
+  }
+>>>>>>> master
