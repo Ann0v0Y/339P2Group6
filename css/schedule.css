@@ -218,6 +218,34 @@
 
 
 /* pop up window  */
+
+/* pop up image  */
+.pop-img-text {
+  position: relative;
+  cursor: pointer;
+}
+.pop-img-text:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.popup-image {
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+
+/* pop up to cart  */
 .popup {
   width: 15rem;
   height: 10rem;
@@ -272,5 +300,17 @@
 @media screen and (max-width:1000px) {
   .schedule-daily {
     flex-direction: column;
+  }
+
+  .date-input-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .dropdown-instructor,
+  .dropdown-calssType {
+    width: 40%;
+    margin: 1rem 0;
   }
 }
