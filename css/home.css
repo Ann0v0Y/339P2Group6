@@ -218,8 +218,8 @@
     .container3 { flex-direction: column; }
     .overview h2 { text-align: center; }
     .backimg {
-      padding-top: 25rem;
-    padding-bottom: 25rem;}
+      padding-top: 22rem;
+    padding-bottom: 22rem;}
     .title h1 { max-width: 100px;
     }
 }
@@ -233,5 +233,5 @@
         visibility: visible;
     }
 
- 
+
 } */
