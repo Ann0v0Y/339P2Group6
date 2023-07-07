@@ -9,7 +9,6 @@
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
   <link href="css/vinyasa.css" rel="stylesheet">
-  <link href="css/dropdown.css" rel="stylesheet">
   <link href="css/class.css" rel="stylesheet">
   <link href="css/schedule.css" rel="stylesheet">
 
@@ -164,7 +163,7 @@
           <div class="schedule-each">
             <div class="schedule-each-info">
               <span>10:00AM</span>
-              <span>Power Flow</span>
+              <span><div class="pop-img-text">Vinyasa Flow</div></span>
               <span>Talese</span>
             </div>
             <a class="main-cta" onclick="showPopup()">Reserve Now</a>
@@ -174,12 +173,10 @@
           <div class="schedule-each">
             <div class="schedule-each-info">
               <span>2:00PM</span>
-                <span>Vinyasa Flow</span>
+                <span>Power Flow</span>
                 <span>Tara</span>
             </div>
             <a class="main-cta" onclick="showPopup()">Reserve Now</a>
-
-
           </div>
 
 
@@ -233,10 +230,7 @@
       </div>
 
       <!-- create a pop up window  -->
-      <!-- <div id="popupWindow" class="popup">
-        <p>Booked successfully!</p>
-        <p><a href="class-cart.html">Click to view cart</a></p>
-      </div> -->
+     
 
       <script>
         function showPopup() {
@@ -249,7 +243,13 @@
           }, 2000);
         }
       </script>
+
+      <div id="popupWindow" class="popup">
+      <p>Booked successfully!</p>
+      <p><a href="class-cart.html">Click to view cart</a></p>
+      </div> 
       <!-- end of pop up window  -->
+
 
     </section>
 
@@ -303,12 +303,82 @@
           dropdownContent.style.display = "block";
         }
         else if (value.includes("t")) {
-          dropdownContent.style.display = "none";
+          dropdownContent.style.display ="block";
         } else {
           dropdownContent.style.display = "none";
         }
       });
     </script>
+
+    <script>
+      var calendarImage = document.querySelector('.calendar-image');
+      var tableContainer = document.querySelector('.table-container');
+    
+      calendarImage.addEventListener('click', function () {
+        this.classList.toggle('clicked');
+        tableContainer.classList.toggle('hidden');
+      });
+    </script>
+    
+    <script>
+      // 获取所有的下拉菜单选项链接
+      const dropdownOptions = document.querySelectorAll('.dropdown-instructor-content a, .dropdown-calssType-content a');
+    
+      // 为每个选项链接添加点击事件监听器
+      dropdownOptions.forEach(option => {
+        option.addEventListener('click', function () {
+          // 将选项文本设置为输入框的值
+          const inputField = this.closest('.dropdown-instructor, .dropdown-calssType').querySelector('input');
+          inputField.value = this.textContent;
+    
+          // 隐藏下拉菜单
+          const dropdownContent = this.closest('.dropdown-instructor-content, .dropdown-calssType-content');
+          dropdownContent.style.display = 'none';
+        });
+      });
+    </script>
+    <script>
+      // 获取所有的日历表格单元格
+      const calendarCells = document.querySelectorAll('.calendar-table td');
+    
+      // 为每个单元格添加点击事件监听器
+      calendarCells.forEach(cell => {
+        cell.addEventListener('click', function () {
+          // 移除所有单元格的选中样式
+          calendarCells.forEach(cell => {
+            cell.classList.remove('selected');
+          });
+    
+          // 添加选中样式到当前点击的单元格
+          this.classList.add('selected');
+        });
+      });
+    </script>
+    
+
+    <!-- 图片弹窗 -->
+    <script>
+      var popImgText = document.querySelectorAll('.pop-img-text');
+
+      popImgText.forEach(function (element) {
+      element.addEventListener('mouseover', function () {
+      var img = document.createElement('img');
+       img.src = 'images/vinyasaFlow.png';
+       img.classList.add('popup-image');
+       this.appendChild(img);
+      });
+
+     element.addEventListener('mouseout', function () {
+    var img = this.querySelector('.popup-image');
+    if (img) {
+      img.remove();
+     }
+    });
+   });
+
+    </script>
+
+
 
 </body>
 
