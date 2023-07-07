@@ -292,3 +292,9 @@
     margin-left: 0;
   }
  }
+
+ @media screen and (max-width: 1000px) {
+   .footer a { font-size: .9rem;}
+   .styleguide {max-width: 100px;}
+   .about {max-width: 100px;}
+ }

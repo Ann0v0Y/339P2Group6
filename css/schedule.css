@@ -223,6 +223,8 @@
 .pop-img-text {
   position: relative;
   cursor: pointer;
+  color: rgb(146, 101, 78);
+  text-decoration: underline;
 }
 .pop-img-text:hover::after {
   content: "";
@@ -231,6 +233,7 @@
   left: 0;
   background-color: transparent;
 }
+
 .popup-image {
   max-width: 500px;
   max-height: 500px;
@@ -313,4 +316,22 @@
     width: 40%;
     margin: 1rem 0;
   }
+}
+
+@media screen and (max-width:768px) {
+.date-input-container {
+  margin: 1rem 5rem;
+}
+.apply-button {
+  display: flex;
+}
+h1 {
+  margin-bottom: 0;
+}
+.schedule {
+  margin: 2rem 3rem;
+}
+.schedule-each {
+  padding-left: 0;
+}
 }

@@ -110,3 +110,11 @@
         display: none;
     }
 }
+
+@media screen and (max-width:768px) {
+  .sign-up {
+    margin: 1rem 1rem;
+  }
+  .sign-up-info {
+    padding-left: 2rem;
+  }
