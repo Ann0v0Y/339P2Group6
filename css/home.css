@@ -218,8 +218,8 @@
     .container3 { flex-direction: column; }
     .overview h2 { text-align: center; }
     .backimg {
-      padding-top: 22rem;
-    padding-bottom: 22rem;}
+      padding-top: 18rem;
+    padding-bottom: 18rem;}
     .title h1 { max-width: 100px;
     }
 }

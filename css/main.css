@@ -57,7 +57,7 @@
   .image-container:hover .original-image {
     display: none;
   }
-  
+
  h1 {
   	font-family: "playfair", serif;
     text-align: center;
@@ -279,21 +279,16 @@
  }
 
 
- /* @media (max-width: 75em) {
- 	h1, h2, h3, h4, p, form {
- 		margin-left: 2rem;
- 	}
-  p {
-    max-width: 15rem;
-}
-h1 {
-  font-size: 2.75rem;
-}
- } */
-
  @media (max-width: 600px) {
+  .image-container {
+    align-self: center;
+  }
   .nav-main-item {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     margin: 0.5rem 0;
+      padding: 10px;
+  }
+  .navigation img {
+    margin-left: 0;
   }
  }
