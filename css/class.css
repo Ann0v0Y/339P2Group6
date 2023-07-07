@@ -135,3 +135,48 @@
       margin-left: 0;
     }
   }
+
+  @media (max-width: 370px) {
+
+    .class-overview h2 {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    .class-overview p {
+      margin-top: 1rem;
+    }
+    .class-intro {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .class-intro-sec {
+      margin: 3rem 1rem;
+    }
+
+    .class-intro h2 {
+      margin-left: 0;
+    }
+    .class-intro p {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .class-intro-sec-reverse {
+      flex-direction: column;
+      margin: 3rem 1rem;
+    }
+
+    .class-info {
+      order: 2;
+    }
+
+    .class-image {
+      order: 1;
+      align-self: center;
+    }
+
+    .class-intro-sec-reverse img {
+      margin-left: 0;
+    }
+  }

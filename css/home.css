@@ -224,6 +224,16 @@
     }
 }
 
+@media screen and (max-width: 370px) {
+    .container3 { flex-direction: column; }
+    .overview h2 { text-align: center; }
+    .backimg {
+      padding-top: 12rem;
+    padding-bottom: 12rem;}
+    .title h1 { max-width: 100px;
+    }
+}
+
 /* @media screen and (max-width:600px) {
     .nav-main{
         visibility: hidden;

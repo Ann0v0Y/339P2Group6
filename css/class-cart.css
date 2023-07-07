@@ -141,5 +141,38 @@ text-align: end;
     margin-top: 5rem;
   }
 
+  @media (max-width: 500px) {
+
+    .table  {
+      width: auto;
+      margin-left: 0;
+    }
+
+    .table-header {
+      font-size: 15px;
+    }
+
+    .cart-container {
+      display: inline-flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .cart-title { margin-left: 0;}
+
+    .receipt-table {
+      align-self: center;
+      margin-left: 0;
+      margin-top: 0;
+      width: 90%;
+    }
+
+    .checkout-btn-container {
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 5rem;
+    }
+
 
 }
