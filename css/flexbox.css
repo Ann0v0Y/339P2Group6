@@ -123,18 +123,20 @@
     padding-right: 2rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    background-color: rgb(165, 167, 143);
+    border: 1px solid white;
     border-radius: 25px;
     font-family: "sf", sans-serif;
     font-size: 1rem;
     color: white;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   .homebutton:active,
   .homebutton:hover,
   .homebutton:focus {
-    background-color: rgb(122, 121, 100);
-    background-color: rgb(140, 142, 118);
+    background-color: #A5A78F;
+    color: white;
+    text-decoration: none;
   }
 
   /* @media (max-width: 75em) {

@@ -60,6 +60,7 @@
 .sign-in-info input:active,
 .sign-in-info input:focus {
     background-size: 0 1px, 100% 1px;
+    border: 0;
     /* border-bottom: 2px solid white; */
 }
 
@@ -134,4 +135,5 @@ label {
   .forget-password {
     float: left;
   }
+}
 }

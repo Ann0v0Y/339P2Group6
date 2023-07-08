@@ -143,6 +143,10 @@
   display: inline-block;
   background-color: transparent;
   color: black;
+  /* text-decoration: underline; */
+}
+
+.apply-button a:hover{
   text-decoration: underline;
 }
 

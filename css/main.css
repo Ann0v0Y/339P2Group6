@@ -29,6 +29,10 @@
     transition: background-color 0.5s ease-out;
   }
 
+ input:hover{
+    border: 2px solid rgb(36, 31, 25);
+  }
+
   .nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus  {
     color: rgb(165, 167, 143);
   }
@@ -160,6 +164,12 @@
     border-radius: 3px;
     color: rgb(36, 31, 25);
   }
+
+
+  input[type=text]:hover{
+    border: 2px solid rgb(102, 75, 62);
+  }
+
 
   a {
       text-decoration: none;

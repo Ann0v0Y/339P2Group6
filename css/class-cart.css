@@ -53,9 +53,12 @@
   border-color: #775C4C;
 }
 
-
+ 
 .cart-container {
   width: 70rem;
+  /* justify-content: center; */
+  /* border:1px solid red; */
+  /* width: 100vw; */
 }
 
 .receipt-container{

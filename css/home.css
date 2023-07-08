@@ -146,59 +146,27 @@
     } */
 }
 
-
-.cart {
-    font-size: 12px;
-    opacity: 0;
-    letter-spacing: 1px;
-    font-family: 'Lato', sans-serif;
-    transform: translateY(40px);
-    transition: all 0.7s;
-}
-
-.cart i {
-      font-size: 16px;
+.book-now {
+    font-family: "sf";
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: #FCFAF6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #775C4C;
+    border: 2px solid #775C4C;
+    transition: background-color 0.5s, color 0.5s;
   }
-
-.cart span {
-    margin-left: 10px;
-    color: white;
-}
-
-.cart span:hover{
-    color:white;
-    text-decoration: underline;
-}
-
-.class-item:hover .overlay {
-    opacity: 1;
-
-    & .head {
-        transform: translateY(0px);
-    }
-
-    & hr {
-        width: 75px;
-        transition-delay: 0.4s;
-    }
-
-    & .price {
-        transform: translateY(0px);
-        transition-delay: 0.3s;
-        opacity: 1;
-    }
-
-    & .cart {
-        transform: translateY(0px);
-        transition-delay: 0.6s;
-        opacity: 1;
-    }
-}
-
-.class-item:hover{
-    box-shadow: 0px 1px 10px rgb(19, 18, 18);
-}
-/* end of hover effect */
+  
+  .book-now:active,
+  .book-now:hover,
+  .book-now:focus {
+    color: #FCFAF6;
+    background-color: #775C4C;
+    border-color: #775C4C;
+  }
 /* end of class list */
 
 

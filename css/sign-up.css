@@ -25,6 +25,7 @@
 .sign-up input:active,
 .sign-up input:focus {
     background-size: 0 1px, 100% 1px;
+    border: 0;
     /* border-bottom: 2px solid white; */
 }
 
@@ -118,3 +119,4 @@
   .sign-up-info {
     padding-left: 2rem;
   }
+}
