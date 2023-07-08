@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
-    border: 1px solid red;
+/*     border: 1px solid red; */
   }
   
   .font h1 {
