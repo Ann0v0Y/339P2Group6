@@ -1,0 +1,41 @@
+.mood{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+
+.font h1{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-left: 5rem;
+    text-align: left;
+}
+
+.colorboxlayout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mood-board{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.references a{
+    margin-left: 5rem;
+}
+
+.footer{
+    margin-top: 5rem;
+}
+
+@media (max-width: 1000px) {
+    .mood-board{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
