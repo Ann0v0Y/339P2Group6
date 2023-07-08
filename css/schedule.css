@@ -143,10 +143,6 @@
   display: inline-block;
   background-color: transparent;
   color: black;
-  /* text-decoration: underline; */
-}
-
-.apply-button a:hover{
   text-decoration: underline;
 }
 
@@ -224,19 +220,21 @@
 /* pop up window  */
 
 /* pop up image  */
-.pop-img-text {
+.pop-img-vinyasaFlow , .pop-img-powerYoga ,.pop-img-freedomFlow{
   position: relative;
   cursor: pointer;
   color: rgb(146, 101, 78);
   text-decoration: underline;
+  margin-right: 2rem; 
 }
-.pop-img-text:hover::after {
+.pop-img-vinyasaFlow:hover::after, .pop-img-powerYoga:hover::after,.pop-img--freedomFlow:hover::after{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   background-color: transparent;
 }
+
 
 .popup-image {
   max-width: 500px;
@@ -249,6 +247,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.9;
+  z-index: 1;
 }
 
 
